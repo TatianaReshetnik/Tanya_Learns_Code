@@ -7,7 +7,7 @@ public class HomeTask6 : IBaseHomeTask
     {
         Console.WriteLine("Enter any number");
         var number = int.Parse(Console.ReadLine());
-        string result = (number % 2 == 0)? "Number is even" : "Number is odd";
-            Console.WriteLine(result);
-        }
+        var result = number % 2 == 0 ? "Number is even" : "Number is odd";
+        Console.WriteLine(result);
     }
+}

@@ -7,12 +7,10 @@ public class HomeTask5 : IBaseHomeTask
     {
         Console.WriteLine("Enter any number");
         var number = int.Parse(Console.ReadLine());
-        if (number % 2 == 0)
-        {
+        if (number % 2 == 0) {
             Console.WriteLine("Number is even");
         }
-        else
-        {
+        else {
             Console.WriteLine("Number is odd");
         }
     }
