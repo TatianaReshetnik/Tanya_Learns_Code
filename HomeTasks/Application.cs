@@ -4,15 +4,17 @@ namespace HomeTasks
 {
     internal static class HomeTasks
     {
-        static void Main()
+        static int Main()
         {
             IBaseHomeTask[] homeTasks = new IBaseHomeTask[]
+            { 
                 new HomeTask1(),
                 new HomeTask2(),
                 new HomeTask3(),
                 new HomeTask4(),
-                new HomeTask5() 
-        }
+                new HomeTask5(),
+                new HomeTask6()
+            };
 
             Console.WriteLine("Enter home task numbers separated by commas (e.g., 1,2,3):");
 
@@ -39,5 +41,3 @@ namespace HomeTasks
         }
     }
 }
-
-
