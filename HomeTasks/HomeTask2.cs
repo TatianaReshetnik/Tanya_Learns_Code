@@ -1,4 +1,5 @@
 namespace HomeTasks;
+
 // Write a program - a console calculator.
 // Create two variables named operand1 and operand2.
 // Assign arbitrary values to the variables. Prompt the user to enter the arithmetic operation sign.
@@ -12,20 +13,19 @@ internal class HomeTask2 : IBaseHomeTask
     public void Run()
     {
         Console.WriteLine("Enter first number");
-        var firstOperand  = double.Parse(Console.ReadLine());
+        var firstOperand = double.Parse(Console.ReadLine());
         Console.WriteLine("Enter second number");
         var secondOperand = double.Parse(Console.ReadLine());
         Console.WriteLine("Enter the function from the list: +, -, *, /");
-        char function = Convert.ToChar(Console.ReadLine());
-        switch (function)
-        {
+        var function = Convert.ToChar(Console.ReadLine());
+        switch (function) {
             case '+':
                 var summarize = firstOperand + secondOperand;
                 Console.WriteLine(summarize);
                 break;
 
             case '-':
-                var subtract = firstOperand  - secondOperand;
+                var subtract = firstOperand - secondOperand;
                 Console.WriteLine(subtract);
                 break;
 
@@ -35,8 +35,7 @@ internal class HomeTask2 : IBaseHomeTask
                 break;
 
             case '/':
-                if (secondOperand == 0)
-                {
+                if (secondOperand == 0) {
                     Console.WriteLine("Cannot divide by zero");
                 }
 
