@@ -8,12 +8,10 @@ public class HomeTask3 : IBaseHomeTask
     {
         Console.WriteLine("Enter any number from 0 to 100");
         var number = int.Parse(Console.ReadLine());
-        if (number >= 0 && number <=14) Console.WriteLine("Your number is within range 0-14");
+        if (number >= 0 && number <= 14) Console.WriteLine("Your number is within range 0-14");
         else if (number > 14 && number <= 35) Console.WriteLine("Your number is within range 15-35"); 
-        else if (number >35 && number <= 50) Console.WriteLine("Your number is within range 36-50");
-        else if (number>50 && number <=100) Console.WriteLine("Your number is within range 51-100");
+        else if (number > 35 && number <= 50) Console.WriteLine("Your number is within range 36-50");
+        else if (number> 50 && number <= 100) Console.WriteLine("Your number is within range 51-100");
         else Console.WriteLine("Your number is NOT within range 0-100");
-
-
     }
 }
