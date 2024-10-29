@@ -9,6 +9,7 @@ namespace HomeTasks
             IBaseHomeTask[] homeTasks = new IBaseHomeTask[]
             {
                 new HomeTask1(),
+                new HomeTask2(),
                 new HomeTask4(),
   };
 
