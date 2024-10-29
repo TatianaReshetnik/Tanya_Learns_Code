@@ -7,10 +7,11 @@ namespace HomeTasks
         static int Main()
         {
             IBaseHomeTask[] homeTasks = new IBaseHomeTask[]
-            {
+            { 
                 new HomeTask1(),
                 new HomeTask2(),
-                new HomeTask4(),
+                new HomeTask3(),
+                new HomeTask4()
   };
 
             Console.WriteLine("Enter home task numbers separated by commas (e.g., 1,2,3):");
