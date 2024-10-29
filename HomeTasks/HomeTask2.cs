@@ -12,36 +12,36 @@ internal class HomeTask2 : IBaseHomeTask
     public void Run()
     {
         Console.WriteLine("Enter first number");
-        var operand1 = double.Parse(Console.ReadLine());
+        var firstOperand  = double.Parse(Console.ReadLine());
         Console.WriteLine("Enter second number");
-        var operand2 = double.Parse(Console.ReadLine());
+        var secondOperand = double.Parse(Console.ReadLine());
         Console.WriteLine("Enter the function from the list: +, -, *, /");
         char function = Convert.ToChar(Console.ReadLine());
         switch (function)
         {
             case '+':
-                var sum = operand1 + operand2;
-                Console.WriteLine(sum);
+                var summarize = firstOperand + secondOperand;
+                Console.WriteLine(summarize);
                 break;
 
             case '-':
-                var sub = operand1 - operand2;
-                Console.WriteLine(sub);
+                var subtract = firstOperand  - secondOperand;
+                Console.WriteLine(subtract);
                 break;
 
             case '*':
-                var mul = operand1 * operand2;
-                Console.WriteLine(mul);
+                var multiply = firstOperand * secondOperand;
+                Console.WriteLine(multiply);
                 break;
 
             case '/':
-                if (operand2 == 0)
+                if (secondOperand == 0)
                 {
                     Console.WriteLine("Cannot divide by zero");
                 }
 
-                var div = operand1 / operand2;
-                Console.WriteLine(div);
+                var divide = firstOperand / secondOperand;
+                Console.WriteLine(divide);
                 break;
             default:
                 Console.WriteLine("Invalid input");
