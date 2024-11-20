@@ -10,9 +10,8 @@ public class HomeTask4 : IBaseHomeTask
     {
         Console.WriteLine(
             "Enter any of the following words: тепло, дождь, туман, солнце, ясно, небо, облако, вода, снег, жара");
-        string weatherWord = Console.ReadLine();
-        switch (weatherWord)
-        {
+        var weatherWord = Console.ReadLine();
+        switch (weatherWord) {
             case "тепло":
                 Console.WriteLine("warm");
                 break;
@@ -47,7 +46,6 @@ public class HomeTask4 : IBaseHomeTask
             default:
                 Console.WriteLine("Неверное слово");
                 break;
-
         }
     }
 }
